@@ -1,3 +1,227 @@
-<h2>
-  put your project here 
-</h2>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Picstudio</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'mywebapp/css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'mywebapp/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'mywebapp/css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+          <div class="main_nav_menu">
+            <div class="fk_width">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a class="" href="{% url 'mywebapp:index' %}">HomePage <span class="sr-only">(current)</span></a>
+                  <a class="" href="{% url 'mywebapp:aboutpage' %}">About me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <div class="layout_padding-bottom">
+
+    <!-- blog section -->
+
+    <section class="blog_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Letest projects
+                </h2>
+                <p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog_container">
+        <div class="blog_bg">
+          <img src="{% static 'mywebapp/images/gallery-bg.png' %}" alt="" />
+        </div>
+        <div class="container">
+          <div class="blog_box">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box b1">
+                  <div class="img-box">
+                    <img src="{% static 'mywebapp/images/blog1.jpg' %}" alt="" />
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog_title">
+                      <h5>
+                        Best photography
+                      </h5>
+                      <div class="blog_post">
+                        <h6>
+                          Post By: Pic studio
+                        </h6>
+                        <h6>
+                          16-01-2020
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box b2">
+                  <div class="img-box">
+                    <img src="{% static 'mywebapp/images/blog2.jpg' %}" alt="" />
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog_title">
+                      <h5>
+                        Photography
+                      </h5>
+                      <div class="blog_post">
+                        <h6>
+                          Post By: Pic studio
+                        </h6>
+                        <h6>
+                          16-01-2020
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end blog section -->
+  </div>
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Contact me
+          </h2>
+        </div>
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="info_contact ">
+                <a href="#" class="link-box">
+                  <div class="detail-box">
+                    <h6>
+                      <img src="{% static 'mywebapp/images/mail.png' %}" alt="" />
+                      <a style="text-decoration: none;" href="mailto:alisajadrajaee313@gmail.com">send me email</a>
+                    </h6>
+                  </div>
+                </a>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="{% static 'mywebapp/images/call.png' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Call +98 9396438793
+                    </h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="social_box">
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/facebook.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/twitter.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/linkedin.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/instagram.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/youtube.png' %}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'mywebapp/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/bootstrap.js' %}"></script>
+  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/custom.js' %}"></script>
+</body>
+
+</html>
