@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Picstudio</title>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'mywebapp/css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href=" {% static 'mywebapp/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'mywebapp/css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body style="background-color: rgb(42, 34, 34);" >
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+          <div class="main_nav_menu">
+            <div class="fk_width">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a class="" href="{% url 'mywebapp:aboutpage' %}">about me</a>
+                  <a class="" href="{% url 'mywebapp:project' %}">projects</a>
+                  <a class="" href="blog.html">Blog </a>
+                </div>
+              </div>
+            </div>
+            <a class="navbar-brand" href="{% url 'mywebapp:index' %}">
+              <span>
+                Home
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container-fluid">
+        <div class="row slider-row">
+          <div class="col-lg-3 offset-lg-1">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="detail-box">
+                    <h5>
+                      <br>
+                      Hello <br>
+                      This is Ali Sajad Rajaee,<br />
+                      a python backend web developer!
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 px-0">
+            <div class="img-box">
+              <img style="border-radius: 8px; " src="{% static 'mywebapp/images/sajad.JPG' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- info section -->
+<br> <br>
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="info_contact ">
+                <div class="heading_container">
+                  <h4>
+                    Contact Me
+                  </h4>
+                </div>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <h6>
+                      <img src="{% static 'mywebapp/images/mail.png' %}" alt="" />
+                      <a style="text-decoration: none;" href="mailto:alisajadrajaee313@gmail.com">send me email</a>
+                    </h6>
+                  </div>
+                </a>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="{% static 'mywebapp/images/call.png' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Call me +989396438793
+                    </h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="social_box">
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/facebook.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/twitter.png' %}" alt="" />
+                </a>
+                <a href="">
+                  <img src="{% static 'mywebapp/images/linkedin.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/instagram.png' %}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section ">
+    <div class="container">
+      <p>
+        this is just the footer of the web page
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'mywebapp/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/bootstrap.js' %}"></script>
+  <script src="{% static 'mywebapp/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/custom.js' %}"></script>
+</body>
+
+</html>

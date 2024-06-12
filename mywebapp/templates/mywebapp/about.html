@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .skills {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .skill-item {
+        margin-bottom: 10px;
+    }
+    .skill-name {
+        font-weight: bold;
+    }
+    .skill-bar {
+        width: 100%;
+        background-color: lightgray;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    .skill-progress {
+        background-color: dodgerblue;
+        height: 20px;
+        border-radius: 5px;
+    }
+  </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>about me</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'mywebapp/css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'mywebapp/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'mywebapp/css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+          <div class="main_nav_menu">
+            <div class="fk_width">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a class="" href="{% url 'mywebapp:index' %}">Homepage<span class="sr-only">(current)</span></a>
+                  <a class="" href="{% url 'mywebapp:project' %}">projects</a>
+                  <a class="" href="##">Blog </a>
+                </div>
+              </div>
+            </div>
+            <a class="navbar-brand" href="{% url 'mywebapp:index' %}">
+              <span>
+                Home
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <div class="heading_container">
+            <h2>
+              about me
+            </h2>
+            <p>
+              Here is how I started my <b>journey</b>, <b>skills</b> I gained as a python backend developer and some basic <b>projects</b> I have done!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client_container">
+      <div class="client_bg">
+        <img src="{% static 'mywebapp/images/gallery-bg.png' %}" alt="" />
+      </div>
+      <div class="container">
+        <div class="client_box">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box b1">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img style="border-radius: 50%;" src="{% static 'mywebapp/images/sajad.JPG' %}" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Ali Sajad Rajaee
+                          </h4>
+                          <p>
+                            It was about a year that I was thinking about programming and software Enginnering, and spend my time searching about this field for my future. Finally I could understand something about this field and started coding exciting journey since 29 September 2023 and could gain some intern level knoledge and skill. I will be too much happy to help you with your projects.Then Let's Have Some Fun! 
+                          </p>
+                          <img src="{% static 'mywebapp/images/quote.png' %}" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- skills section  -->
+  
+<div class="skills">
+  <div class="skill-item">
+    <h4><b>skills</b></h4>
+    <span class="skill-name">Python</span>
+    <div class="skill-bar">
+      <div class="skill-progress" style="width: 90%;"></div>
+    </div>
+  </div>
+<div class="skill-item">
+  <span class="skill-name">Django</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 80%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">DRF</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 75%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">SQL</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 0%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">PostgreSQL</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 0%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">Docker</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 0%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">HTML</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 70%;"></div>
+  </div>
+</div>
+<div class="skill-item">
+  <span class="skill-name">CSS</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 60%;"></div>
+  </div>
+</div>
+<div>
+  <a class="link-box" href="{% url 'mywebapp:project' %}">Click to review my projects!</a>
+</div>
+
+</div> <br> <br>
+
+  <!-- end of skill section -->
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="heading_container">
+          <h4>
+            Contact Me
+          </h4>
+        </div>
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="info_contact ">
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <h6>
+                      <img src="{% static 'mywebapp/images/mail.png' %}" alt="" />
+                      <a style="text-decoration: none;" href="mailto:alisajadrajaee313@gmail.com">send me email</a>
+                    </h6>
+                  </div>
+                </a>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="{% static 'mywebapp/images/call.png' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Call me +98 9396438793
+                    </h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="social_box">
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/facebook.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/twitter.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/linkedin.png' %}" alt="" />
+                </a>
+                <a href="#">
+                  <img src="{% static 'mywebapp/images/instagram.png' %}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section ">
+    <div class="container">
+      <p>
+        here is the footer, edit it letter
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'mywebapp/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/bootstrap.js' %}"></script>
+  <script src="{% static 'mywebapp/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mywebapp/js/custom.js' %}"></script>
+</body>
+
+</html>
