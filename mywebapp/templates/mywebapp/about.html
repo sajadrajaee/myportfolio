@@ -70,7 +70,7 @@
                 <div class="overlay-content">
                   <a class="" href="{% url 'mywebapp:index' %}">Homepage<span class="sr-only">(current)</span></a>
                   <a class="" href="{% url 'mywebapp:project' %}">projects</a>
-                  <a class="" href="##">Blog </a>
+                  <a class="" href="{% url 'mywebapp:blog' %}">Blog </a>
                 </div>
               </div>
             </div>
@@ -160,19 +160,19 @@
 <div class="skill-item">
   <span class="skill-name">DRF</span>
   <div class="skill-bar">
-    <div class="skill-progress" style="width: 75%;"></div>
+    <div class="skill-progress" style="width: 50%;"></div>
   </div>
 </div>
 <div class="skill-item">
   <span class="skill-name">SQL</span>
   <div class="skill-bar">
-    <div class="skill-progress" style="width: 0%;"></div>
+    <div class="skill-progress" style="width: 50%;"></div>
   </div>
 </div>
 <div class="skill-item">
   <span class="skill-name">PostgreSQL</span>
   <div class="skill-bar">
-    <div class="skill-progress" style="width: 0%;"></div>
+    <div class="skill-progress" style="width: 60%;"></div>
   </div>
 </div>
 <div class="skill-item">
@@ -193,11 +193,14 @@
     <div class="skill-progress" style="width: 60%;"></div>
   </div>
 </div>
-<div>
-  <a class="link-box" href="{% url 'mywebapp:project' %}">Click to review my projects!</a>
+<div class="skill-item">
+  <span class="skill-name">Git(version control system)</span>
+  <div class="skill-bar">
+    <div class="skill-progress" style="width: 50%;"></div>
+  </div>
 </div>
-
-</div> <br> <br>
+</div> 
+<br> <br>
 
   <!-- end of skill section -->
   <!-- info section -->
@@ -233,7 +236,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-6 ">
+            <!-- <div class="col-md-6 ">
               <div class="social_box">
                 <a href="#">
                   <img src="{% static 'mywebapp/images/facebook.png' %}" alt="" />
@@ -248,7 +251,7 @@
                   <img src="{% static 'mywebapp/images/instagram.png' %}" alt="" />
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -262,7 +265,7 @@
   <footer class="footer_section ">
     <div class="container">
       <p>
-        here is the footer, edit it letter
+
       </p>
     </div>
   </footer>

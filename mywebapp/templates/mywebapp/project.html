@@ -46,6 +46,7 @@
                 <div class="overlay-content">
                   <a class="" href="{% url 'mywebapp:index' %}">HomePage <span class="sr-only">(current)</span></a>
                   <a class="" href="{% url 'mywebapp:aboutpage' %}">About me</a>
+                  <a class="" href="{% url 'mywebapp:blog' %}">blog posts</a>
                 </div>
               </div>
             </div>
@@ -87,12 +88,14 @@
               <div class="col-md-6">
                 <div class="box b1">
                   <div class="img-box">
-                    <img src="{% static 'mywebapp/images/blog1.jpg' %}" alt="" />
+                    <a href="https://github.com/sajadrajaee/bloggg">
+                      <img src="{% static 'mywebapp/images/blog.PNG' %}" alt="" />
+                    </a>
                   </div>
                   <div class="blog-detail">
                     <div class="blog_title">
                       <h5>
-                        Best photography
+                        Blog app
                       </h5>
                       <div class="blog_post">
                         <h6>
@@ -112,12 +115,77 @@
               <div class="col-md-6">
                 <div class="box b2">
                   <div class="img-box">
-                    <img src="{% static 'mywebapp/images/blog2.jpg' %}" alt="" />
+                    <a href="https://github.com/sajadrajaee/authentication-system">
+                      <img src="{% static 'mywebapp/images/authe.PNG' %}" alt="" />
+                    </a>
                   </div>
                   <div class="blog-detail">
                     <div class="blog_title">
                       <h5>
-                        Photography
+                        authentication system
+                      </h5>
+                      <div class="blog_post">
+                        <h6>
+                          Post By: Pic studio
+                        </h6>
+                        <h6>
+                          16-01-2020
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog_bg">
+          <img src="{% static 'mywebapp/images/gallery-bg.png' %}" alt="" />
+        </div>
+        <div class="container">
+          <div class="blog_box">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box b1">
+                  <div class="img-box">
+                    <a href="https://github.com/sajadrajaee/e-commerce-Dajngo-app/">
+                      <img src="{% static 'mywebapp/images/ecommerce.PNG' %}" alt="" />
+                    </a>
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog_title">
+                      <h5>
+                        e-commerce shop 
+                      </h5>
+                      <div class="blog_post">
+                        <h6>
+                          Post By: Pic studio
+                        </h6>
+                        <h6>
+                          16-01-2020
+                        </h6>
+                      </div>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">  
+                <div class="box b2">
+                  <div class="img-box">
+                    <a href="https://github.com/sajadrajaee/issue_tracker">
+                      <img src="{% static 'mywebapp/images/issue.PNG' %}" alt="" />
+                    </a>
+                  </div>
+                  <div class="blog-detail">
+                    <div class="blog_title">
+                      <h5>
+                        issue tracker
                       </h5>
                       <div class="blog_post">
                         <h6>
@@ -171,13 +239,13 @@
                   </div>
                   <div class="detail-box">
                     <h6>
-                      Call +98 9396438793
+                      Call me +98 9396438793
                     </h6>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="col-md-6 ">
+            <!-- <div class="col-md-6 ">
               <div class="social_box">
                 <a href="#">
                   <img src="{% static 'mywebapp/images/facebook.png' %}" alt="" />
@@ -195,7 +263,7 @@
                   <img src="{% static 'mywebapp/images/youtube.png' %}" alt="" />
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -208,8 +276,7 @@
   <footer class="footer_section ">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved.
       </p>
     </div>
   </footer>
